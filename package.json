@@ -25,16 +25,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:es": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "lint:es:fix": "yarn run lint:es -- --fix",
     "format": "prettier --write ./src",
     "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
-      "yarn run lint:es:fix",
-      "yarn run format",
-      "git add"
+      "yarn lint:es",
+      "yarn lint:es:fix",
+      "yarn format"
     ],
     "**/*.{html,scss,css}": [
       "git add"
