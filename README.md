@@ -14,3 +14,16 @@
 - Если при комите хаски выявит проблему в консоли он подстветит где именно была ошибка и не даст сделать коммит
 
 ###### ![img](https://files.fm/thumb_show.php?i=3jh6z4j22)
+
+# Prettier
+
+Prettier is an opinionated code formatter that supports a lot of different programming languages
+
+# ESlint
+
+ESLint statically analyzes your code to quickly find problems.
+
+import/order: Enforce a convention in the order of require() / import statements
+
+groups: How groups are defined, and the order to respect.
+newlines-between: always-and-inside-groups: at least one new line between each group will be enforced.
