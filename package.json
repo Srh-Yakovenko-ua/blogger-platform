@@ -27,7 +27,18 @@
     "eject": "react-scripts eject",
     "lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint:es:fix": "yarn run lint:es -- --fix",
-    "format": "prettier . --write"
+    "format": "prettier --write ./src",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": [
+      "yarn run lint:es:fix",
+      "yarn run format",
+      "git add"
+    ],
+    "**/*.{html,scss,css}": [
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -62,9 +73,10 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.3",
-    "jest": "^29.5.0",
     "prettier": "^2.8.7",
+    "husky": "^8.0.0",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.0",
     "ts-jest": "^29.0.5"
   }
 }
