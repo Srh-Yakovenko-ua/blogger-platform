@@ -27,3 +27,24 @@ import/order: Enforce a convention in the order of require() / import statements
 
 groups: How groups are defined, and the order to respect.
 newlines-between: always-and-inside-groups: at least one new line between each group will be enforced.
+
+# Tailwind
+
+## Theme Configuration
+
+The theme section of tailwind.config.js file is where define project’s color palette, type scale, fonts, breakpoints, border radius values, and more.
+
+### Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| primary | ![#F8346B](https://via.placeholder.com/10/F8346B?text=+) #F8346B |
+| font-color-black | ![#1A1718](https://via.placeholder.com/10/1A1718?text=+) #1A1718 |
+| font-color-grey | ![#737067](https://via.placeholder.com/10/737067?text=+) #737067 |
+| background-white | ![#FCFBFB](https://via.placeholder.com/10/FCFBFB?text=+) #FCFBFB |
+| background-grey | ![#FAF7F8](https://via.placeholder.com/10/FAF7F8?text=+) #FAF7F8 |
+| link-color | ![#3677F7](https://via.placeholder.com/10/3677F7?text=+) #3677F7 |
+
+### Font Reference
+
+Inter, sans-serif
