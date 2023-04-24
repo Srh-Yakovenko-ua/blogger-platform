@@ -17,7 +17,15 @@ module.exports = {
       sm: "2px",
       full: "50%",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "light-grey": "#FCFBFB",
+        "mid-grey": "#FAF7F8",
+      },
+      boxShadow: {
+        regular: "0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1)",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
